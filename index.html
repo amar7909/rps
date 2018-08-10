@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/css/all.css"/>
+</head>
+<body>
+	<section class="main">
+		<div class="overlay" id="overlay">
+			<div id="user-name">
+				<label>Enter PLayer Name</label>
+				<input type="text" maxlength="8" placeholder="Maximum 8 Characters" onkeydown="search(this)"/>
+				<h5>Press ENTER to insert!!</h5>
+			</div>
+		</div>
+		
+		<div class="inner">
+			<div class="container">
+				<div class="rsp-title">
+					<h1>Rock Paper Scissors</h1>
+				</div>
+					
+				<div class="play-area col-xs-6">
+					<h1 id="player-name">User</h1>
+					<div class="rsp-score">
+						<span id="my-score">0</span>
+						<h2 id="my-choice">Your Choice</h2>
+					</div>
+				</div>
+
+				<div class="play-area col-xs-6">
+					<h1>Computer</h1>
+					<div class="rsp-score">
+						<span id="computer-score">0</span>
+						<h2 id="computer-choice">Computer Choice</h2>
+					</div>
+				</div>
+
+				<div class="black-board">
+					<h2 id="result">Result</h2>
+				</div>
+
+				<div class="rsp-controls col-xs-12">
+					<a href="#" onclick="selectInput('rock')"><i class="far fa-hand-rock"></i></a>
+					<a href="#" onclick="selectInput('paper')"><i class="far fa-hand-paper"></i></a>
+					<a href="#" onclick="selectInput('scissors')"><i class="far fa-hand-scissors"></i></a>
+					<div class="reset-btn">
+						<a href="#" onclick="resetScore()" class="button"></a>	
+					</div>
+					<h1 class="reset">Reset</h1>	
+				</div>
+			</div>
+		</div>
+		<div class="intro"><h6>#Crafted By <a href="www.codeflit.com">Amar</a></h6></div>
+	</section>
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>
